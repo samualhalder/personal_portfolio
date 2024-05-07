@@ -3,7 +3,11 @@ import flowbite from "flowbite-react/tailwind";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", flowbite.content()],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "font-Arial": ["Arial"],
+      },
+    },
   },
   plugins: [flowbite.plugin()],
 };
