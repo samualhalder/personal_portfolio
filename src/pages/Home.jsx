@@ -3,7 +3,7 @@ function Home() {
     <div className="h-screan bg-violet-300 flex flex-col justify-around m-6 rounded-md sm:flex-row">
       {/* leftside */}
       <div className="m-4 flex">
-        <div className="text-3xl w-[46%] self-center mx-auto font-mono">
+        <div className="text-5xl w-[46%] self-center mx-auto font-mono">
           Hey, I am{" "}
           <span className="text-violet-700 font-mono">Samual Halder</span> a
           Full Stack Web Developer
