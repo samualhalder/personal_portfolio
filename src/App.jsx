@@ -6,13 +6,13 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <>
+    <div className="bg-[#15202B] p-2">
       <Header />
       <Home />
       <About />
       <Projects />
       <Contact />
-    </>
+    </div>
   );
 }
 
