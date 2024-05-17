@@ -1,18 +1,22 @@
 import { Button, Timeline } from "flowbite-react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
-import { Si99Designs, SiLeetcode } from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
+import { FaLinkedinIn } from "react-icons/fa";
 import React from "react";
 
 function About() {
   return (
-    <div className="bg-gray-900 p-5 m-6 mt-8 flex gap-20 justify-center rounded-md">
+    <div
+      id="about"
+      className="bg-gray-900 p-5 m-6 mt-8 flex -z-10 justify-center rounded-md"
+    >
       <Timeline>
         <Timeline.Item>
           <Timeline.Point />
           <Timeline.Content>
             <Timeline.Time>February 2021</Timeline.Time>
-            <Timeline.Title color="white" className="text-white">
+            <Timeline.Title className="text-white">
               B.Tech in Coumpuer Science & Engineering
             </Timeline.Title>
             <Timeline.Body>
@@ -20,10 +24,13 @@ function About() {
               Science & Engineering form Govt. College of Engineering & Textile
               Technology,Serampore
             </Timeline.Body>
-            <a href="https://www.gcetts.ac.in/" target="_blank">
-              <Button color="gray" className="bg-[#1A8CD8] border-0 text-white">
-                Learn More
-                <HiArrowNarrowRight className="ml-2 h-5 w-5" />
+            <a
+              href="https://www.linkedin.com/in/samual-halder-464b8820a/"
+              target="_blank"
+            >
+              <Button className="bg-[#1A8CD8] border-0 text-white">
+                LinkedIn Profile
+                <FaLinkedinIn className="ml-2 h-5 w-5" />
               </Button>
             </a>
           </Timeline.Content>
