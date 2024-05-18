@@ -38,6 +38,15 @@ function Header() {
             About
           </HashLink>
         )}
+        {path === "/skills" ? (
+          <HashLink smooth to="/skills#skills" className="text-blue-400">
+            Skills
+          </HashLink>
+        ) : (
+          <HashLink smooth to="/skills#skills">
+            Skills
+          </HashLink>
+        )}
         {path === "/project" ? (
           <HashLink smooth to="/project#project" className="text-blue-400">
             Project
