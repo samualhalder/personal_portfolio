@@ -8,7 +8,7 @@ import Skills from "./pages/Skills";
 
 function App() {
   return (
-    <div className="bg-[#15202B] p-2">
+    <div className="bg-[#141414] p-2">
       <BrowserRouter>
         <Header />
         <Home />

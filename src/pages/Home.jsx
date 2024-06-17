@@ -2,7 +2,9 @@ function Home() {
   return (
     <div
       id="home"
-      className="h-screan text-white bg-gray-900 flex flex-col justify-around m-6 rounded-md sm:flex-row"
+      className={`h-screan text-white bg-${
+        import.meta.env.BGCOLOR
+      } flex flex-col justify-around m-6 rounded-md sm:flex-row`}
     >
       {/* leftside */}
       <div className="m-4 flex">
