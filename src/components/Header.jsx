@@ -10,7 +10,9 @@ function Header() {
       fluid
       rounded
       color="white"
-      className="bg-gray-900 z-10 text-white sticky top-0 mx-[24px]"
+      className={` bg-${
+        import.meta.env.VITE_BGCOLOR
+      } z-10 text-white sticky top-0 mx-[24px]`}
     >
       <Navbar.Brand>
         <span className="self-center text-purple-600  whitespace-nowrap text-xl font-bold dark:text-white">

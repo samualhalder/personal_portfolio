@@ -9,7 +9,9 @@ function About() {
   return (
     <div
       id="about"
-      className="bg-gray-900 p-5 m-6 mt-8 flex -z-10 justify-center rounded-md"
+      className={` bg-${
+        import.meta.env.VITE_BGCOLOR
+      } p-5 m-6 mt-8 flex -z-10 justify-center rounded-md`}
     >
       <Timeline>
         <Timeline.Item>

@@ -1,9 +1,11 @@
 function Home() {
+  const col = import.meta.env.VITE_BGCOLOR;
+  console.log(col);
   return (
     <div
       id="home"
       className={`h-screan text-white bg-${
-        import.meta.env.BGCOLOR
+        import.meta.env.VITE_BGCOLOR
       } flex flex-col justify-around m-6 rounded-md sm:flex-row`}
     >
       {/* leftside */}

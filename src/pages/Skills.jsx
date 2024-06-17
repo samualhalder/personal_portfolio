@@ -5,11 +5,17 @@ function Skills() {
     <>
       <div
         id="skills"
-        className="bg-gray-900 p-5 m-6 mt-8 mb-0 flex flex-col justify-center rounded-md text-white"
+        className={` bg-${
+          import.meta.env.VITE_BGCOLOR
+        } p-5 m-6 mt-8 mb-0 flex flex-col justify-center rounded-md text-white`}
       >
         <div className="mx-auto text-3xl  font-font-Arial">Skills</div>
       </div>
-      <div className="bg-gray-900 p-5 m-6 mt-0 flex flex-col justify-center rounded-md text-white">
+      <div
+        className={` bg-${
+          import.meta.env.VITE_BGCOLOR
+        } p-5 m-6 mt-0 flex flex-col justify-center rounded-md text-white`}
+      >
         <ul className="first-ul mx-auto w-[70%] text-sm flex overflow-hidden space-x-9 hover:animate-none">
           <div className="flex space-x-9  my-4 text-sm animate-loop-scroll">
             <div className="flex justify-center items-center border-2 border-blue-500 w-[150px] h-[80px] p-2 rounded-md">
