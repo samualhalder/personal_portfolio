@@ -4,15 +4,14 @@ import { useLocation } from "react-router-dom";
 
 function Header() {
   const path = useLocation().pathname;
-  console.log(path);
+  const bgcolor = import.meta.env.VITE_BGCOLOR;
   return (
     <Navbar
       fluid
       rounded
       color="white"
-      className={` bg-${
-        import.meta.env.VITE_BGCOLOR
-      } z-10 text-white sticky top-0 mx-[24px]`}
+      style={{ backgroundColor: bgcolor }}
+      className={`z-10 text-white sticky top-0 mx-[24px]`}
     >
       <Navbar.Brand>
         <span className="self-center text-purple-600  whitespace-nowrap text-xl font-bold dark:text-white">

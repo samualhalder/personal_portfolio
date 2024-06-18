@@ -6,12 +6,12 @@ import { FaLinkedinIn } from "react-icons/fa";
 import React from "react";
 
 function About() {
+  const bgcolor = import.meta.env.VITE_BGCOLOR;
   return (
     <div
       id="about"
-      className={` bg-${
-        import.meta.env.VITE_BGCOLOR
-      } p-5 m-6 mt-8 flex -z-10 justify-center rounded-md`}
+      style={{ backgroundColor: bgcolor }}
+      className={`  p-5 m-6 mt-8 flex -z-10 justify-center rounded-md`}
     >
       <Timeline>
         <Timeline.Item>

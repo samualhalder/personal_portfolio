@@ -1,20 +1,19 @@
 import React from "react";
 
 function Skills() {
+  const bgcolor = import.meta.env.VITE_BGCOLOR;
   return (
     <>
       <div
+        style={{ backgroundColor: bgcolor }}
         id="skills"
-        className={` bg-${
-          import.meta.env.VITE_BGCOLOR
-        } p-5 m-6 mt-8 mb-0 flex flex-col justify-center rounded-md text-white`}
+        className={` p-5 m-6 mt-8 mb-0 flex flex-col justify-center rounded-md text-white`}
       >
         <div className="mx-auto text-3xl  font-font-Arial">Skills</div>
       </div>
       <div
-        className={` bg-${
-          import.meta.env.VITE_BGCOLOR
-        } p-5 m-6 mt-0 flex flex-col justify-center rounded-md text-white`}
+        style={{ backgroundColor: bgcolor }}
+        className={`  p-5 m-6 mt-0 flex flex-col justify-center rounded-md text-white`}
       >
         <ul className="first-ul mx-auto w-[70%] text-sm flex overflow-hidden space-x-9 hover:animate-none">
           <div className="flex space-x-9  my-4 text-sm animate-loop-scroll">
