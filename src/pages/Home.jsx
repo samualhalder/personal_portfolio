@@ -5,13 +5,13 @@ function Home() {
     <div
       id="home"
       style={{ backgroundColor: bgcolor }}
-      className={`h-screan text-white bg-${bgcolor} flex flex-col justify-around m-6 rounded-md sm:flex-row`}
+      className={` text-white bg-${bgcolor} flex flex-col justify-around m-6 rounded-md sm:flex-row`}
     >
       {/* leftside */}
       <div className="m-4 flex">
-        <div className="text-4xl md:text-5xl  w-full md:w-[55%] self-center mx-auto font-mono">
+        <div className="text-4xl lg:text-5xl  w-full lg:w-[55%] self-center mx-auto font-mono">
           Hey, I am{" "}
-          <h1 className="text-[#1A8CD8] animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white md:pr-5   md:text-5xl font-bold">
+          <h1 className=" text-cyan-600 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white lg:pr-5  lg:text-5xl font-bold">
             Samual Halder
           </h1>{" "}
           a Full Stack Web Developer

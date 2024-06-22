@@ -14,7 +14,7 @@ function Header() {
       className={`z-10 text-white sticky top-0 mx-[24px]`}
     >
       <Navbar.Brand>
-        <span className="self-center text-purple-600  whitespace-nowrap text-xl font-bold dark:text-white">
+        <span className="self-center hover:text-cyan-800 cursor-none  whitespace-nowrap text-3xl font-lobster dark:text-white">
           Samual Halder
         </span>
       </Navbar.Brand>
