@@ -6,6 +6,8 @@ export default {
     extend: {
       fontFamily: {
         "font-Arial": ["Arial"],
+        "nova-flat": '"Nova Flat"',
+        lobster: '"Lobster", sans-serif',
       },
       animation: {
         "loop-scroll": "loop-scroll 30s linear infinite",
