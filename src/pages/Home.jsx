@@ -9,11 +9,11 @@ function Home() {
     >
       {/* leftside */}
       <div className="m-4 flex">
-        <div className="text-5xl w-[46%] self-center mx-auto font-mono">
+        <div className="text-4xl md:text-5xl  w-full md:w-[55%] self-center mx-auto font-mono">
           Hey, I am{" "}
-          <span className="text-violet-700 font-bold font-mono">
+          <h1 className="text-[#1A8CD8] animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white md:pr-5   md:text-5xl font-bold">
             Samual Halder
-          </span>{" "}
+          </h1>{" "}
           a Full Stack Web Developer
           <p className="text-sm">
             I build website using React, node, express & mongodb.
