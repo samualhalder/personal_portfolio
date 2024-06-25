@@ -1,20 +1,21 @@
 import React from "react";
 import Card from "../components/Card";
+import { Link } from "react-router-dom";
 
 function Projects() {
   const bgColor = import.meta.env.VITE_BGCOLOR;
   const projects = [
     {
       title: "Hello mall",
-      photoURL:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpCxTweA10mpzGaTRzDiKhpCTKqTGopUClWg&s",
+      photoURL: "hellomall-project.png",
       about: "its a fully functional e-commerce site build witd MERN.",
+      link: "https://mern-ecommerce-delta-one.vercel.app/",
     },
     {
       title: "TechNuze",
-      photoURL:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpCxTweA10mpzGaTRzDiKhpCTKqTGopUClWg&s",
+      photoURL: "techNuze-project.png",
       about: "its a fully functional news site build witd MERN.",
+      link: "https://technuze.onrender.com/",
     },
   ];
 
