@@ -6,16 +6,18 @@ function Projects() {
   const bgColor = import.meta.env.VITE_BGCOLOR;
   const projects = [
     {
-      title: "Hello mall",
-      photoURL: "hellomall-project.png",
-      about: "its a fully functional e-commerce site build witd MERN.",
-      link: "https://mern-ecommerce-delta-one.vercel.app/",
-    },
-    {
+      id: 1,
       title: "TechNuze",
       photoURL: "techNuze-project.png",
       about: "its a fully functional news site build witd MERN.",
       link: "https://technuze.onrender.com/",
+    },
+    {
+      id: 2,
+      title: "Hello mall",
+      photoURL: "hellomall-project.png",
+      about: "its a fully functional e-commerce site build witd MERN.",
+      link: "https://mern-ecommerce-delta-one.vercel.app/",
     },
   ];
 
