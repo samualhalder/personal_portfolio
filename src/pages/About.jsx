@@ -22,9 +22,9 @@ function About() {
               B.Tech in Coumpuer Science & Engineering
             </Timeline.Title>
             <Timeline.Body>
-              currently i am a 3rd year B.Tech Student majoring in Coumpuer
-              Science & Engineering form Govt. College of Engineering & Textile
-              Technology,Serampore
+              I am currently a fourth-year B.Tech student majoring in Computer
+              Science and Engineering at the Government College of Engineering
+              and Textile Technology, Serampore.
             </Timeline.Body>
             <a
               href="https://www.linkedin.com/in/samual-halder-464b8820a/"
@@ -65,8 +65,9 @@ function About() {
               Started Probelm solving on LeetCode
             </Timeline.Title>
             <Timeline.Body>
-              I solve around 500+ coding chalenges on platforms like
-              leetCode,Coding ninja etc. I am also top 42% of LeetCode user
+              I have solved over 600 coding challenges on platforms such as
+              LeetCode and Coding Ninja. Additionally, I rank in the top 25% of
+              LeetCode users
             </Timeline.Body>
             <a href="https://leetcode.com/u/samualhalder/" target="_blank">
               <Button color="gray" className="bg-[#1A8CD8] border-0 text-white">

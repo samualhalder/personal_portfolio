@@ -1,7 +1,157 @@
-import React from "react";
+import {
+  Button,
+  Checkbox,
+  Label,
+  TextInput,
+  Textarea,
+  Toast,
+} from "flowbite-react";
+import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import emailjs, { sendForm } from "@emailjs/browser";
+import { HiCheck, HiExclamation, HiX } from "react-icons/hi";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter, FaXTwitter } from "react-icons/fa6";
+import { FiGithub } from "react-icons/fi";
 
 function Contact() {
-  return <div id="contact">Contact</div>;
+  const bgcolor = import.meta.env.VITE_BGCOLOR;
+  const form = useRef();
+  const [success, setSuccess] = useState(false);
+  const [failure, setFailure] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setFailure(false);
+    setSuccess(false);
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_YOUR_SERVICE_ID,
+        import.meta.env.VITE_YOUR_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_YOUR_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          e.target.reset();
+          setSuccess(true);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          setFailure(true);
+        }
+      );
+  };
+  return (
+    <div
+      id="contact"
+      style={{ backgroundColor: bgcolor }}
+      className={`  p-5 m-6 mt-8 flex flex-col -z-10 justify-center rounded-md text-white`}
+    >
+      <h1 className="text-5xl font-lobster text-white self-center">
+        {" "}
+        Contact me
+      </h1>
+      <div className="flex flex-col gap-4">
+        {success && (
+          <Toast>
+            <div className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-green-100 text-green-500 dark:bg-green-800 dark:text-green-200">
+              <HiCheck className="h-5 w-5" />
+            </div>
+            <div className="ml-3 text-sm font-normal">
+              Mail send successfully.
+            </div>
+            <Toast.Toggle />
+          </Toast>
+        )}
+        {failure && (
+          <Toast>
+            <div className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-red-100 text-red-500 dark:bg-red-800 dark:text-red-200">
+              <HiX className="h-5 w-5" />
+            </div>
+            <div className="ml-3 text-sm font-normal">
+              Oops something went wrong.
+            </div>
+            <Toast.Toggle />
+          </Toast>
+        )}
+      </div>
+
+      <form
+        ref={form}
+        className="flex w-full md:w-[40%] mx-auto flex-col gap-4"
+        onSubmit={sendEmail}
+      >
+        <div>
+          <div className="mb-2 block">
+            <Label
+              htmlFor="email2"
+              value="Your email"
+              className="text-gray-400"
+            />
+          </div>
+          <TextInput
+            id="email"
+            type="email"
+            name="from_email"
+            placeholder="name@gmail.com"
+            required
+            shadow
+          />
+        </div>
+        <div>
+          <div className="mb-2 block">
+            <Label htmlFor="name" value="Your name" className="text-gray-400" />
+          </div>
+          <TextInput
+            id="name"
+            type="text"
+            name="from_name"
+            required
+            shadow
+            placeholder="John Dow"
+          />
+        </div>
+        <div>
+          <div className="mb-2 block">
+            <Label
+              htmlFor="message"
+              value="message"
+              className="text-gray-400"
+            />
+          </div>
+          <Textarea
+            id="comment"
+            name="message"
+            placeholder="Leave a comment..."
+            required
+            rows={5}
+          />
+        </div>
+
+        <Button type="submit">Send</Button>
+      </form>
+
+      <div className="flex justify-center gap-20 m-10 text-3xl">
+        <Link to={"https://www.instagram.com/samualhalder/"}>
+          <FaInstagram />
+        </Link>
+        <Link to={"https://x.com/samualhalder"}>
+          <FaXTwitter />
+        </Link>
+        <Link to={"https://github.com/samualhalder"}>
+          <FiGithub />
+        </Link>
+        <Link to={"https://www.linkedin.com/in/samual-halder-464b8820a/"}>
+          <FaLinkedin />
+        </Link>
+      </div>
+    </div>
+  );
 }
 
 export default Contact;

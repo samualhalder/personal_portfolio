@@ -59,7 +59,7 @@ function Header() {
         )}
         {path === "/contact" ? (
           <HashLink smooth to="/contact#contact" className="text-blue-400">
-            Contant
+            Contact
           </HashLink>
         ) : (
           <HashLink smooth to="/contact#contact">
