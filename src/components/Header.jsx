@@ -21,7 +21,7 @@ function Header() {
       <Navbar.Toggle />
       <Navbar.Collapse>
         {path === "/home" ? (
-          <HashLink smooth to="/home#home" className="text-blue-400">
+          <HashLink smooth to="/home#home" className="text-cyan-700">
             Home
           </HashLink>
         ) : (
@@ -31,7 +31,7 @@ function Header() {
         )}
 
         {path === "/about" ? (
-          <HashLink smooth to="/about#about" className="text-blue-400">
+          <HashLink smooth to="/about#about" className="text-cyan-700">
             About
           </HashLink>
         ) : (
@@ -40,7 +40,7 @@ function Header() {
           </HashLink>
         )}
         {path === "/skills" ? (
-          <HashLink smooth to="/skills#skills" className="text-blue-400">
+          <HashLink smooth to="/skills#skills" className="text-cyan-700">
             Skills
           </HashLink>
         ) : (
@@ -49,7 +49,7 @@ function Header() {
           </HashLink>
         )}
         {path === "/project" ? (
-          <HashLink smooth to="/project#project" className="text-blue-400">
+          <HashLink smooth to="/project#project" className="text-cyan-700">
             Project
           </HashLink>
         ) : (
@@ -58,7 +58,7 @@ function Header() {
           </HashLink>
         )}
         {path === "/contact" ? (
-          <HashLink smooth to="/contact#contact" className="text-blue-400">
+          <HashLink smooth to="/contact#contact" className="text-cyan-700">
             Contact
           </HashLink>
         ) : (

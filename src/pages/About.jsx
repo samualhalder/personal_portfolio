@@ -30,7 +30,7 @@ function About() {
               href="https://www.linkedin.com/in/samual-halder-464b8820a/"
               target="_blank"
             >
-              <Button color="gray" className="bg-[#1A8CD8] border-0 text-white">
+              <Button color="gray" className="bg-cyan-700 border-0 text-white">
                 LinkedIn Profile
                 <FaLinkedinIn className="ml-2 h-5 w-5" />
               </Button>
@@ -50,7 +50,7 @@ function About() {
               and Express.Js
             </Timeline.Body>
             <a href="https://github.com/samualhalder" target="_blank">
-              <Button color="gray" className="bg-[#1A8CD8] border-0 text-white">
+              <Button color="gray" className="bg-cyan-700 border-0 text-white">
                 Github profile
                 <FaGithub className="ml-2 h-5 w-5" />
               </Button>
@@ -70,7 +70,7 @@ function About() {
               LeetCode users
             </Timeline.Body>
             <a href="https://leetcode.com/u/samualhalder/" target="_blank">
-              <Button color="gray" className="bg-[#1A8CD8] border-0 text-white">
+              <Button color="gray" className="bg-cyan-700 border-0 text-white">
                 Leetcode Profile
                 <SiLeetcode className="ml-2 h-5 w-5" />
               </Button>

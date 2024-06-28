@@ -1,6 +1,8 @@
 import {
   Button,
   Checkbox,
+  FooterCopyright,
+  FooterDivider,
   Label,
   TextInput,
   Textarea,
@@ -138,18 +140,20 @@ function Contact() {
 
       <div className="flex justify-center gap-20 m-10 text-3xl">
         <Link to={"https://www.instagram.com/samualhalder/"}>
-          <FaInstagram />
+          <FaInstagram className="hover:scale-150 duration-300" />
         </Link>
         <Link to={"https://x.com/samualhalder"}>
-          <FaXTwitter />
+          <FaXTwitter className="hover:scale-150 duration-300" />
         </Link>
         <Link to={"https://github.com/samualhalder"}>
-          <FiGithub />
+          <FiGithub className="hover:scale-150 duration-300" />
         </Link>
         <Link to={"https://www.linkedin.com/in/samual-halder-464b8820a/"}>
-          <FaLinkedin />
+          <FaLinkedin className="hover:scale-150 duration-300" />
         </Link>
       </div>
+      <FooterDivider />
+      <FooterCopyright href="" by="Samual Halder" year={2024} />
     </div>
   );
 }

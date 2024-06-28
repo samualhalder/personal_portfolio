@@ -11,7 +11,7 @@ function Home() {
       <div className="m-4 flex">
         <div className="text-4xl lg:text-5xl  w-full lg:w-[55%] self-center mx-auto font-mono">
           Hey, I am{" "}
-          <h1 className="text-[#1A8CD8] animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white md:pr-5   md:text-5xl font-bold">
+          <h1 className="text-cyan-700 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white md:pr-5   md:text-5xl font-bold">
             Samual Halder
           </h1>{" "}
           a Full Stack Web Developer
