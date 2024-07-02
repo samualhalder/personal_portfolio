@@ -129,7 +129,7 @@ function Contact() {
           <Textarea
             id="comment"
             name="message"
-            placeholder="Leave a comment..."
+            placeholder="Leave a message..."
             required
             rows={5}
           />
