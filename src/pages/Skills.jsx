@@ -1,19 +1,16 @@
-import React from "react";
-
 function Skills() {
   const bgcolor = import.meta.env.VITE_BGCOLOR;
   return (
-    <>
+    <div className="h-screen p-5 m-6 mt-8 " id="skills">
       <div
         style={{ backgroundColor: bgcolor }}
-        id="skills"
-        className={` p-5 m-6 mt-8 mb-0 flex flex-col justify-center rounded-md text-white`}
+        className={` bg-blue-300 p-5 m-6  mb-0 flex flex-col justify-center rounded-md text-white`}
       >
-        <div className="mx-auto text-5xl  font-lobster">Skills</div>
+        <h1 className="mx-auto text-5xl  font-lobster">Skills</h1>
       </div>
       <div
         style={{ backgroundColor: bgcolor }}
-        className={`  p-5 m-6 mt-0 flex flex-col justify-center rounded-md text-white`}
+        className={`  flex flex-col justify-center rounded-md text-white`}
       >
         <ul className="first-ul mx-auto w-[70%] text-sm flex overflow-hidden space-x-9 hover:animate-none">
           <div className="flex space-x-9  my-4 text-sm animate-loop-scroll">
@@ -360,7 +357,7 @@ function Skills() {
           </div>
         </ul>
       </div>
-    </>
+    </div>
   );
 }
 

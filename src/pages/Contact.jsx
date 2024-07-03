@@ -15,6 +15,7 @@ import { HiCheck, HiExclamation, HiX } from "react-icons/hi";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter, FaXTwitter } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
+import { SiLeetcode } from "react-icons/si";
 
 function Contact() {
   const bgcolor = import.meta.env.VITE_BGCOLOR;
@@ -52,7 +53,7 @@ function Contact() {
     <div
       id="contact"
       style={{ backgroundColor: bgcolor }}
-      className={`  p-5 m-6 mt-8 flex flex-col -z-10 justify-center rounded-md text-white`}
+      className={` h-screen p-5 m-6 mt-8 flex flex-col -z-10 justify-center rounded-md text-white`}
     >
       <h1 className="text-5xl font-lobster text-white self-center">
         {" "}
@@ -138,22 +139,30 @@ function Contact() {
         <Button type="submit">Send</Button>
       </form>
 
-      <div className="flex justify-center gap-20 m-10 text-3xl">
+      <div className="flex justify-center gap-7 md:gap-20 m-10 text-3xl">
+        <Link to={"https://github.com/samualhalder"}>
+          <FiGithub className="hover:scale-150 duration-300" />
+        </Link>
+        <Link to={"https://github.com/samualhalder"}>
+          <SiLeetcode className="hover:scale-150 duration-300" />
+        </Link>
+        <Link to={"https://www.linkedin.com/in/samual-halder-464b8820a/"}>
+          <FaLinkedin className="hover:scale-150 duration-300" />
+        </Link>
         <Link to={"https://www.instagram.com/samualhalder/"}>
           <FaInstagram className="hover:scale-150 duration-300" />
         </Link>
         <Link to={"https://x.com/samualhalder"}>
           <FaXTwitter className="hover:scale-150 duration-300" />
         </Link>
-        <Link to={"https://github.com/samualhalder"}>
-          <FiGithub className="hover:scale-150 duration-300" />
-        </Link>
-        <Link to={"https://www.linkedin.com/in/samual-halder-464b8820a/"}>
-          <FaLinkedin className="hover:scale-150 duration-300" />
-        </Link>
       </div>
       <FooterDivider />
-      <FooterCopyright href="" by="Samual Halder" year={2024} />
+      <FooterCopyright
+        href=""
+        by="Samual Halder"
+        year={2024}
+        className="self-center"
+      />
     </div>
   );
 }

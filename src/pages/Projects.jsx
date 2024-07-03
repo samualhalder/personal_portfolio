@@ -24,9 +24,9 @@ function Projects() {
     <div
       style={{ backgroundColor: bgColor }}
       id="project"
-      className={` text-white font-lobster text-5xl flex flex-col justify-center items-center m-6 rounded-md`}
+      className={` text-white font-lobster text-5xl flex flex-col justify-center items-center  rounded-md`}
     >
-      Projects
+      <h1>Projects</h1>
       <div className="flex flex-col">
         {projects.map((project, ind) => (
           <Card key={ind} project={project}></Card>
