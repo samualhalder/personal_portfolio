@@ -11,7 +11,7 @@ function Header() {
       rounded
       color="white"
       style={{ backgroundColor: bgcolor }}
-      className={`z-10 text-white sticky top-0 mx-[24px] opacity-55`}
+      className={`z-10 text-white sticky top-0 mx-[24px] `}
     >
       <Navbar.Brand>
         <span className="self-center hover:text-cyan-800 cursor-none  whitespace-nowrap text-3xl font-lobster dark:text-white">

@@ -4,6 +4,7 @@ import {
   FooterCopyright,
   FooterDivider,
   Label,
+  Spinner,
   TextInput,
   Textarea,
   Toast,
@@ -20,6 +21,7 @@ import { SiLeetcode } from "react-icons/si";
 function Contact() {
   const bgcolor = import.meta.env.VITE_BGCOLOR;
   const form = useRef();
+  const [sending, setSending] = useState(false);
   const [success, setSuccess] = useState(false);
   const [failure, setFailure] = useState(false);
 
@@ -27,6 +29,7 @@ function Contact() {
     e.preventDefault();
     setFailure(false);
     setSuccess(false);
+    setSending(true);
 
     emailjs
       .sendForm(
@@ -42,10 +45,12 @@ function Contact() {
           console.log("SUCCESS!");
           e.target.reset();
           setSuccess(true);
+          setSending(false);
         },
         (error) => {
           console.log("FAILED...", error.text);
           setFailure(true);
+          setSending(false);
         }
       );
   };
@@ -87,7 +92,7 @@ function Contact() {
       <form
         ref={form}
         className="flex w-full md:w-[40%] mx-auto flex-col gap-4"
-        onSubmit={sendEmail}
+        onSubmit={(e) => sendEmail(e)}
       >
         <div>
           <div className="mb-2 block">
@@ -136,7 +141,12 @@ function Contact() {
           />
         </div>
 
-        <Button type="submit">Send</Button>
+        {sending === false && <Button type="submit">Send</Button>}
+        {sending === true && (
+          <Button>
+            <Spinner />
+          </Button>
+        )}
       </form>
 
       <div className="flex justify-center gap-7 md:gap-20 m-10 text-3xl">

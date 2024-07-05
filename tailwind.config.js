@@ -12,7 +12,7 @@ export default {
       animation: {
         "loop-scroll": "loop-scroll 30s linear infinite",
         "loop-scroll-reverse": "loop-scroll-reverse 30s linear infinite",
-        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite",
+        typing: "typing 2s steps(13) infinite alternate, blink .7s infinite",
       },
       keyframes: {
         "loop-scroll": {
