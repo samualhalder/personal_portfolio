@@ -153,7 +153,7 @@ function Contact() {
         <Link to={"https://github.com/samualhalder"}>
           <FiGithub className="hover:scale-150 duration-300" />
         </Link>
-        <Link to={"https://github.com/samualhalder"}>
+        <Link to={"https://leetcode.com/u/samualhalder/"}>
           <SiLeetcode className="hover:scale-150 duration-300" />
         </Link>
         <Link to={"https://www.linkedin.com/in/samual-halder-464b8820a/"}>
