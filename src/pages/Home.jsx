@@ -9,7 +9,7 @@ function Home() {
     <div
       id="home"
       style={{ backgroundColor: bgcolor }}
-      className={`h-screen text-white md:text-3xl lg:text-4xl bg-${bgcolor} bg-[url('laptop-image.jpg')]  bg-cover   flex flex-col justify-center items-center  rounded-md`}
+      className={`h-screen text-white md:text-3xl lg:text-4xl bg-${bgcolor} bg-[url('/laptop-image.jpg')]  bg-cover   flex flex-col justify-center items-center  rounded-md`}
     >
       <div className=" md:hidden mt-0">
         <img src="laptop-image.jpg" alt="image" />
