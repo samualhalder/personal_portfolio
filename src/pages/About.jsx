@@ -9,7 +9,7 @@ function About() {
       <div className="text-white text-5xl font-lobster self-center ">About</div>
       <div className="md:flex p-6 justify-between mt-5">
         <div className="rounded-full overflow-hidden md:w-[40%]">
-          <img src="my-image.png" alt="" />
+          <img src="my-image.png" alt="my-image" />
         </div>
         <div className="text-white ml-5 md:w-[50%] mt-5 md:mt-0">
           <span className="text-blue-700 text-2xl font-bold">@whoami/:</span>

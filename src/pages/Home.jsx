@@ -16,7 +16,7 @@ function Home() {
       </div>
       <div className=" mb-8 font-mono text-lg">
         {" "}
-        <h1>Hey i am</h1>{" "}
+        <h1 className="text-xl">Hey i am</h1>{" "}
       </div>
       <div>
         <TypeAnimation
@@ -29,7 +29,7 @@ function Home() {
             1000,
             "a Fullstack web developer.",
             1000,
-            "building for the web.",
+            "building new things for the web.",
             1000,
           ]}
           wrapper="span"
