@@ -28,7 +28,7 @@ function Projects() {
     {
       id: 1,
       title: "Hello mall",
-      photoURL: "hellomall-project.png",
+      photoURL: "hello-mall.png",
       about: "its a fully functional e-commerce site build witd MERN.",
       link: "https://mern-ecommerce-delta-one.vercel.app/",
     },
