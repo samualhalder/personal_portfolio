@@ -1,6 +1,7 @@
-import { Button } from "flowbite-react";
+import { FaFileCode } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { MdArrowOutward } from "react-icons/md";
+import { HashLink } from "react-router-hash-link";
 
 function Home() {
   const bgcolor = import.meta.env.VITE_BGCOLOR;
@@ -41,15 +42,23 @@ function Home() {
           repeat={Infinity}
         />
       </div>
-      <a
-        className="inline-block"
-        href="https://drive.google.com/file/d/1JOAHfmx_2XjlGvH153-6eQQolTzPP6Q9/view?usp=sharing"
-      >
-        <button className="m-8 text-lg md:m-20  rounded-3xl p-2 bg-white text-black hover:bg-slate-200">
-          Resume
-          <MdArrowOutward className="inline" />
-        </button>
-      </a>
+      <div className="flex md:m-20 gap-2 font-mono">
+        <a
+          className="inline-block"
+          href="https://drive.google.com/file/d/1JOAHfmx_2XjlGvH153-6eQQolTzPP6Q9/view?usp=sharing"
+        >
+          <button className=" text-lg   rounded-3xl p-2 bg-white text-black hover:bg-slate-200">
+            Resume
+            <MdArrowOutward className="inline ml-1" />
+          </button>
+        </a>
+        <HashLink smooth to={"/project/#project"}>
+          <button className="  text-lg   rounded-3xl p-2 bg-white text-black hover:bg-slate-200">
+            Projects
+            <FaFileCode className="inline ml-1" size={15} />
+          </button>
+        </HashLink>
+      </div>
     </div>
   );
 }
