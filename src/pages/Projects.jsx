@@ -8,7 +8,7 @@ function Projects() {
       id: 4,
       title: "Mail chat",
       photoURL: "mail-chat.png",
-      about: "Take feedback from your user and share them as a testimoianl.",
+      about: "A fast chat app using redis server.",
       link: "https://mail-chat-rose.vercel.app/",
     },
     {

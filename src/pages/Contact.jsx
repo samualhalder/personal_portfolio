@@ -1,6 +1,5 @@
 import {
   Button,
-  Checkbox,
   FooterCopyright,
   FooterDivider,
   Label,
@@ -9,6 +8,7 @@ import {
   Textarea,
   Toast,
 } from "flowbite-react";
+
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import emailjs, { sendForm } from "@emailjs/browser";
@@ -141,7 +141,14 @@ function Contact() {
           />
         </div>
 
-        {sending === false && <Button type="submit">Send</Button>}
+        {sending === false && (
+          <Button type="submit">
+            @{" "}
+            <span className="font-bold mx-1 select-text">
+              samual.halder2020@gmail.com
+            </span>
+          </Button>
+        )}
         {sending === true && (
           <Button>
             <Spinner />
